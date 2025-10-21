@@ -6,17 +6,14 @@ class validators {
 			origin.setCustomValidity(
 				"Warning - you dummy, ya missed the bloody thing needed, fix dat"
 			);
-			return;
 		} else if (origin.validity.tooLong) {
 			origin.setCustomValidity(
 				"Warning - how long have you got? this is way too long!"
 			);
-			return;
 		} else if (origin.validity.typeMismatch) {
 			origin.setCustomValidity(
 				"Warning - where did you put that? wrong place bud'"
 			);
-			return;
 		}
 	}
 

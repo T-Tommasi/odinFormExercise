@@ -1,19 +1,19 @@
-<style src="css/main.css"></style>
-<script src="index.js"></script>
+<link rel="stylesheet" href="css/main.css" />
+<script src="index.js" type="module"></script>
 
 <div id="root">
 	<div class="container">
 		<div class="formContainer">
-			<form id="form">
+			<form id="form" style="display: flex; flex-direction: column">
 				<label for="name">Name</label>
-				<input type="text" id="name" name="name" />
+				<input type="text" id="name" name="name" required />
 				<label for="email">Email</label>
-				<input type="email" id="email" name="email" />
+				<input type="email" id="email" name="email" required />
 				<label for="password"></label>
-				<input type="password" id="password" name="password">Password</form>
+				<input type="password" id="password" name="password" required />
 				<label for="message">Message</label>
 				<textarea id="message" name="message"></textarea>
-				<button type="submit">Send</button>
+				<button type="submit" id="button">Send</button>
 			</form>
 		</div>
 	</div>

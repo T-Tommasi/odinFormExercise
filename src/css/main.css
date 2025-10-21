@@ -1,0 +1,10 @@
+input:invalid {
+	border-color: red;
+}
+
+input:invalid + span::before {
+	content: attr(data-validity-message);
+	color: red;
+	display: block;
+	margin-top: 5px;
+}

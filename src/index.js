@@ -9,4 +9,16 @@ form.addEventListener("submit", (e) => {
 	validators.required(mail);
 	validators.passwordCheck(password);
 	validators.mailCheck(mail);
+
+	form.reportValidity();
+});
+
+mail?.addEventListener("input", () => validators.mailCheck(mail));
+password?.addEventListener("input", () => validators.passwordCheck(password));
+name?.addEventListener("input", () => validators.required(name));
+
+form?.addEventListener("submit", (e) => {
+	if (!form.checkValidity()) {
+		e.preventDefault();
+	}
 });
