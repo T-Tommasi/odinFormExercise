@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "es6" /* Compile down to modern-but-compatible JavaScript */,
+		"module": "esnext" /* Let Webpack handle the modules */,
+		"moduleResolution": "node" /* How it finds modules */,
+		"strict": true /* Be a good developer */,
+		"esModuleInterop": true /* Helps with 'require' vs 'import' nonsense */,
+		"forceConsistentCasingInFileNames": true /* Prevents silly mistakes */
+	},
+	"include": [
+		"src/**/*" /* This is the magic. "Look in the 'src' folder for everything" */
+	],
+	"exclude": ["node_modules" /* "Don't... just don't even look in here." */]
+}
